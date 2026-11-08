@@ -1,0 +1,126 @@
+name: SearchAIHider
+options:
+  createIntermediateGroups: true
+  developmentLanguage: ja
+  deploymentTarget:
+    macOS: "13.3"
+    iOS: "16.4"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+configFiles:
+  Debug: Signing.xcconfig
+  Release: Signing.xcconfig
+targetTemplates:
+  App:
+    type: application
+    sources:
+      - path: App
+        excludes: [MacInfo.plist, IOSInfo.plist]
+      - path: Resources
+    settings:
+      base:
+        PRODUCT_NAME: Search AI Hider
+        PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_ID)
+        INFOPLIST_KEY_CFBundleDisplayName: Search AI Hider
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  Blocker:
+    type: app-extension
+    sources:
+      - path: Blocker
+        excludes: [Info.plist]
+      - path: Resources
+    info:
+      path: Blocker/Info.plist
+      properties:
+        CFBundleDisplayName: Search AI Hider
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSHumanReadableDescription: Hides AI answer panels on Google and Bing search results.
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.content-blocker
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ContentBlockerRequestHandler
+    settings:
+      base:
+        PRODUCT_NAME: Search AI Hider Blocker
+        PRODUCT_BUNDLE_IDENTIFIER: $(APP_BUNDLE_ID).blocker
+        APPLICATION_EXTENSION_API_ONLY: YES
+        ENABLE_DEBUG_DYLIB: NO
+        SKIP_INSTALL: YES
+targets:
+  SearchAIHiderMac:
+    platform: macOS
+    templates: [App]
+    info:
+      path: App/MacInfo.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+        LSApplicationCategoryType: public.app-category.utilities
+        LSUIElement: true
+    entitlements:
+      path: MacSandbox.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+    settings:
+      base:
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_HARDENED_RUNTIME: YES
+    dependencies:
+      - target: SearchAIHiderBlockerMac
+        embed: true
+  SearchAIHiderBlockerMac:
+    platform: macOS
+    templates: [Blocker]
+    entitlements:
+      path: MacSandbox.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+    settings:
+      base:
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_HARDENED_RUNTIME: YES
+        # PlugInKit needs AppKit's NSSharingService subsystem at startup.
+        OTHER_LDFLAGS: "$(inherited) -Wl,-needed_framework,AppKit"
+  SearchAIHiderIOS:
+    platform: iOS
+    templates: [App]
+    info:
+      path: App/IOSInfo.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+    dependencies:
+      - target: SearchAIHiderBlockerIOS
+        embed: true
+  SearchAIHiderBlockerIOS:
+    platform: iOS
+    templates: [Blocker]
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SUPPORTS_MACCATALYST: NO
+        OTHER_LDFLAGS: "$(inherited) -Wl,-needed_framework,UIKit"
+schemes:
+  Search AI Hider (Mac):
+    build:
+      targets:
+        SearchAIHiderMac: all
+  Search AI Hider (iPhone and iPad):
+    build:
+      targets:
+        SearchAIHiderIOS: all

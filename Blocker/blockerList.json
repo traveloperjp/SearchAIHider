@@ -1,0 +1,36 @@
+[
+  {
+    "trigger": {
+      "url-filter": "^https?://[a-z.]+/search[?]",
+      "resource-type": [
+        "document"
+      ],
+      "if-domain": [
+        "google.com",
+        "www.google.com",
+        "google.co.jp",
+        "www.google.co.jp"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": "#rcnt > .M8OgIe:has(#eKIzJc, .SePcAf [data-attnms], [data-ly^='/desktop_aio_layout/']), #eKIzJc, .SePcAf:has([data-attnms]), h1 + div[data-async-context] > div:first-child:not(:only-child):has(> .SePcAf [data-attnms], > [data-async-type='folsrch']):not(:has(#rso, #center_col))"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://[a-z.]+/search[?]",
+      "resource-type": [
+        "document"
+      ],
+      "if-domain": [
+        "bing.com",
+        "www.bing.com"
+      ]
+    },
+    "action": {
+      "type": "css-display-none",
+      "selector": ".b_ans:has(> #copans_container, > #b_wpt_container_ml), .b_ans.b_top:has(> .cht_container), #copans_container"
+    }
+  }
+]

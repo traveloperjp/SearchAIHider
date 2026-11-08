@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D5517FC49CED1BC02CB36F5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5DE7892A975FCE83AF0E6138 /* PrivacyInfo.xcprivacy */; };
+		4C6BC635E98018A148DBB848 /* SearchAIHiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D886E14524D0D53BA099FE34 /* SearchAIHiderApp.swift */; };
+		7157297EAAB5D0032DDCDCFF /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BDE680B3AD1E29D047EF29 /* ContentBlockerRequestHandler.swift */; };
+		762EB7E5B1BB88355E7A8DA4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5DE7892A975FCE83AF0E6138 /* PrivacyInfo.xcprivacy */; };
+		831B084BBBE408B4AEA3ECDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A4774908E9A30D73E99BCC /* Assets.xcassets */; };
+		8FBC58616CEF375CBB86759B /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 525867A66A910832267DB234 /* blockerList.json */; };
+		95CDB494B99FA3A6EC102B5E /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BDE680B3AD1E29D047EF29 /* ContentBlockerRequestHandler.swift */; };
+		A58D0A829A57754773577242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A4774908E9A30D73E99BCC /* Assets.xcassets */; };
+		B370D74725E87586592F1162 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5DE7892A975FCE83AF0E6138 /* PrivacyInfo.xcprivacy */; };
+		E19FC7390E73EA055DC0733E /* SearchAIHiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D886E14524D0D53BA099FE34 /* SearchAIHiderApp.swift */; };
+		E6495EA0908462BC03A2869F /* SearchAIHiderBlockerMac.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BDBE83F9F14212BA8B38E7E7 /* SearchAIHiderBlockerMac.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6E928EDADD2E88265B1779A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5DE7892A975FCE83AF0E6138 /* PrivacyInfo.xcprivacy */; };
+		F03CE741575AEC996B942388 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 525867A66A910832267DB234 /* blockerList.json */; };
+		F6E4CF888B2F2CC0D00FA074 /* SearchAIHiderBlockerIOS.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D3413560633DB243AF6E3AA6 /* SearchAIHiderBlockerIOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19F13CCFE5FB4A7533D6C699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79A226AE0BAA5427AB83F576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED2F31A183C479DF34625A4;
+			remoteInfo = SearchAIHiderBlockerMac;
+		};
+		8494906222C7FABA70D3A159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79A226AE0BAA5427AB83F576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2770BD0BF363CE393E53EE4D;
+			remoteInfo = SearchAIHiderBlockerIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C1CAA14BDB3197C5CE3CF8B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E6495EA0908462BC03A2869F /* SearchAIHiderBlockerMac.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86C8D886C89083A1B215B924 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F6E4CF888B2F2CC0D00FA074 /* SearchAIHiderBlockerIOS.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		056E6FCFEAA2A3881ADC38BF /* SearchAIHiderIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SearchAIHiderIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		466CCC56665C6BF2AEF46F2A /* SearchAIHiderMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchAIHiderMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		525867A66A910832267DB234 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		56A4774908E9A30D73E99BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DE7892A975FCE83AF0E6138 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BDBE83F9F14212BA8B38E7E7 /* SearchAIHiderBlockerMac.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SearchAIHiderBlockerMac.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BDE680B3AD1E29D047EF29 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		D3413560633DB243AF6E3AA6 /* SearchAIHiderBlockerIOS.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SearchAIHiderBlockerIOS.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D886E14524D0D53BA099FE34 /* SearchAIHiderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAIHiderApp.swift; sourceTree = "<group>"; };
+		"TEMP_6A779916-80C1-4F15-8147-8DDF33EC8B82" /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08C09C6B4D85FBEEE33773FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3413560633DB243AF6E3AA6 /* SearchAIHiderBlockerIOS.appex */,
+				BDBE83F9F14212BA8B38E7E7 /* SearchAIHiderBlockerMac.appex */,
+				056E6FCFEAA2A3881ADC38BF /* SearchAIHiderIOS.app */,
+				466CCC56665C6BF2AEF46F2A /* SearchAIHiderMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21B852753848D0752676029C = {
+			isa = PBXGroup;
+			children = (
+				E450339114F7354D8C7B1528 /* App */,
+				3523DFC2F8BC48525255D1D3 /* Blocker */,
+				93CE1F7EA4A8529E83BAE03F /* Resources */,
+				08C09C6B4D85FBEEE33773FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3523DFC2F8BC48525255D1D3 /* Blocker */ = {
+			isa = PBXGroup;
+			children = (
+				525867A66A910832267DB234 /* blockerList.json */,
+				C0BDE680B3AD1E29D047EF29 /* ContentBlockerRequestHandler.swift */,
+			);
+			path = Blocker;
+			sourceTree = "<group>";
+		};
+		93CE1F7EA4A8529E83BAE03F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DE7892A975FCE83AF0E6138 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E450339114F7354D8C7B1528 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				56A4774908E9A30D73E99BCC /* Assets.xcassets */,
+				D886E14524D0D53BA099FE34 /* SearchAIHiderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		"TEMP_2882A8F9-FC61-4F7B-B450-6867FFD44F82" /* source */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_6A779916-80C1-4F15-8147-8DDF33EC8B82" /* Signing.xcconfig */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C90D5D1ADB6ACA9CA6A9887 /* SearchAIHiderMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59BBC9D45F1006195D8A77A3 /* Build configuration list for PBXNativeTarget "SearchAIHiderMac" */;
+			buildPhases = (
+				C15B4816C6349B911DBDBBBF /* Sources */,
+				51FFCB568795346FCFC1949E /* Resources */,
+				5C1CAA14BDB3197C5CE3CF8B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E545B50583F12C30D2E50015 /* PBXTargetDependency */,
+			);
+			name = SearchAIHiderMac;
+			packageProductDependencies = (
+			);
+			productName = SearchAIHiderMac;
+			productReference = 466CCC56665C6BF2AEF46F2A /* SearchAIHiderMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2770BD0BF363CE393E53EE4D /* SearchAIHiderBlockerIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB33E81887C77EF60096D166 /* Build configuration list for PBXNativeTarget "SearchAIHiderBlockerIOS" */;
+			buildPhases = (
+				DC1850D0FC7F8C494A16F439 /* Sources */,
+				8E22A3E6814B167F16A937C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchAIHiderBlockerIOS;
+			packageProductDependencies = (
+			);
+			productName = SearchAIHiderBlockerIOS;
+			productReference = D3413560633DB243AF6E3AA6 /* SearchAIHiderBlockerIOS.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B1B18356A7A7541BB7CA6F05 /* SearchAIHiderIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51CBD1E10A74618CBF483E4E /* Build configuration list for PBXNativeTarget "SearchAIHiderIOS" */;
+			buildPhases = (
+				5DD511DFAA15320113C09FFC /* Sources */,
+				0CC813FD2964579E29CE106F /* Resources */,
+				86C8D886C89083A1B215B924 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C02C267B38B5A67DFED4CBB0 /* PBXTargetDependency */,
+			);
+			name = SearchAIHiderIOS;
+			packageProductDependencies = (
+			);
+			productName = SearchAIHiderIOS;
+			productReference = 056E6FCFEAA2A3881ADC38BF /* SearchAIHiderIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EED2F31A183C479DF34625A4 /* SearchAIHiderBlockerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B70155C78B6C81BC4B7F976 /* Build configuration list for PBXNativeTarget "SearchAIHiderBlockerMac" */;
+			buildPhases = (
+				411E8135FCDC421461D3C4DE /* Sources */,
+				73C38FFABF979B3F0C5D5F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchAIHiderBlockerMac;
+			packageProductDependencies = (
+			);
+			productName = SearchAIHiderBlockerMac;
+			productReference = BDBE83F9F14212BA8B38E7E7 /* SearchAIHiderBlockerMac.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79A226AE0BAA5427AB83F576 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0C90D5D1ADB6ACA9CA6A9887 = {
+						ProvisioningStyle = Automatic;
+					};
+					2770BD0BF363CE393E53EE4D = {
+						ProvisioningStyle = Automatic;
+					};
+					B1B18356A7A7541BB7CA6F05 = {
+						ProvisioningStyle = Automatic;
+					};
+					EED2F31A183C479DF34625A4 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD7EC8876475C0CD855A00AA /* Build configuration list for PBXProject "SearchAIHider" */;
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ja,
+			);
+			mainGroup = 21B852753848D0752676029C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 08C09C6B4D85FBEEE33773FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C90D5D1ADB6ACA9CA6A9887 /* SearchAIHiderMac */,
+				EED2F31A183C479DF34625A4 /* SearchAIHiderBlockerMac */,
+				B1B18356A7A7541BB7CA6F05 /* SearchAIHiderIOS */,
+				2770BD0BF363CE393E53EE4D /* SearchAIHiderBlockerIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CC813FD2964579E29CE106F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58D0A829A57754773577242 /* Assets.xcassets in Resources */,
+				E6E928EDADD2E88265B1779A /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51FFCB568795346FCFC1949E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831B084BBBE408B4AEA3ECDA /* Assets.xcassets in Resources */,
+				B370D74725E87586592F1162 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73C38FFABF979B3F0C5D5F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762EB7E5B1BB88355E7A8DA4 /* PrivacyInfo.xcprivacy in Resources */,
+				F03CE741575AEC996B942388 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E22A3E6814B167F16A937C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5517FC49CED1BC02CB36F5 /* PrivacyInfo.xcprivacy in Resources */,
+				8FBC58616CEF375CBB86759B /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		411E8135FCDC421461D3C4DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7157297EAAB5D0032DDCDCFF /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DD511DFAA15320113C09FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19FC7390E73EA055DC0733E /* SearchAIHiderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15B4816C6349B911DBDBBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6BC635E98018A148DBB848 /* SearchAIHiderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1850D0FC7F8C494A16F439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CDB494B99FA3A6EC102B5E /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C02C267B38B5A67DFED4CBB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2770BD0BF363CE393E53EE4D /* SearchAIHiderBlockerIOS */;
+			targetProxy = 8494906222C7FABA70D3A159 /* PBXContainerItemProxy */;
+		};
+		E545B50583F12C30D2E50015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED2F31A183C479DF34625A4 /* SearchAIHiderBlockerMac */;
+			targetProxy = 19F13CCFE5FB4A7533D6C699 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0935482338E63DBB7B1872CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacSandbox.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/MacInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Search AI Hider";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "Search AI Hider";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DC154FB1AF55678DCF38B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/IOSInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Search AI Hider";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "Search AI Hider";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A87D542BE44095272936E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacSandbox.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/MacInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Search AI Hider";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "Search AI Hider";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		54829BF53225885D21127E65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/IOSInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Search AI Hider";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
+				PRODUCT_NAME = "Search AI Hider";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		58C7BFA67475AF1247AF7146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_DEBUG_DYLIB = NO;
+				INFOPLIST_FILE = Blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited) -Wl,-needed_framework,UIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).blocker";
+				PRODUCT_NAME = "Search AI Hider Blocker";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64E1855342A085F708DC35A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = MacSandbox.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited) -Wl,-needed_framework,AppKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).blocker";
+				PRODUCT_NAME = "Search AI Hider Blocker";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8BD241812814648072AC8E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_6A779916-80C1-4F15-8147-8DDF33EC8B82" /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A26A72EAA51F326C8C5BF0D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = MacSandbox.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited) -Wl,-needed_framework,AppKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).blocker";
+				PRODUCT_NAME = "Search AI Hider Blocker";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DB1B929103D521737A9B760E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_DEBUG_DYLIB = NO;
+				INFOPLIST_FILE = Blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited) -Wl,-needed_framework,UIKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID).blocker";
+				PRODUCT_NAME = "Search AI Hider Blocker";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE0E417487B5E318DCD4D615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_6A779916-80C1-4F15-8147-8DDF33EC8B82" /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51CBD1E10A74618CBF483E4E /* Build configuration list for PBXNativeTarget "SearchAIHiderIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DC154FB1AF55678DCF38B58 /* Debug */,
+				54829BF53225885D21127E65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		59BBC9D45F1006195D8A77A3 /* Build configuration list for PBXNativeTarget "SearchAIHiderMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0935482338E63DBB7B1872CA /* Debug */,
+				3A87D542BE44095272936E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B70155C78B6C81BC4B7F976 /* Build configuration list for PBXNativeTarget "SearchAIHiderBlockerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64E1855342A085F708DC35A9 /* Debug */,
+				A26A72EAA51F326C8C5BF0D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AB33E81887C77EF60096D166 /* Build configuration list for PBXNativeTarget "SearchAIHiderBlockerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C7BFA67475AF1247AF7146 /* Debug */,
+				DB1B929103D521737A9B760E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD7EC8876475C0CD855A00AA /* Build configuration list for PBXProject "SearchAIHider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD241812814648072AC8E28 /* Debug */,
+				EE0E417487B5E318DCD4D615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79A226AE0BAA5427AB83F576 /* Project object */;
+}
